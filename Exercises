@@ -1,0 +1,24 @@
+Q.
+
+Sigmoid neurons simulating perceptrons, part I
+Suppose we take all the weights and biases in a network of perceptrons, and multiply them by a positive constant, c>0. Show that the behaviour of the network doesn't change.
+
+A.
+
+Multiplying by a constant would not change the sign of w.x+b > 0 inequality. The output of every perceptron would be same and hence, the output of neural network would remain same.
+
+Q. 
+
+Sigmoid neurons simulating perceptrons, part II
+Suppose we have the same setup as the last problem - a network of perceptrons. Suppose also that the overall input to the network of perceptrons has been chosen. We won't need the actual input value, we just need the input to have been fixed. Suppose the weights and biases are such that w⋅x+b≠0 for the input x to any particular perceptron in the network. Now replace all the perceptrons in the network by sigmoid neurons, and multiply the weights and biases by a positive constant c>0. Show that in the limit as c→∞ the behaviour of this network of sigmoid neurons is exactly the same as the network of perceptrons. How can this fail when w⋅x+b=0 for one of the perceptrons? 
+
+A. 
+
+As c->Infinity, if w.x+b > 0, then output approaches 1 otherwise 0 which is
+same as in case of perceptron based neural network. But if w.x+b=0 for some
+input x to any one of the perceptron, the neuron would output a finite value
+between 0 and 1 ( which may be same or opposite the result ).
+
+
+
+
